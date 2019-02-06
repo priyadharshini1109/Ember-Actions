@@ -1,0 +1,10 @@
+{{#each model as |pro|}}
+{{#if isExpanded}}
+  <button {{action "toggleBody"}}>Hide Body</button>
+  <p>{{pro.body}}</p>
+{{else}}
+  <button {{action "toggleBody"}}>Show Body</button>
+{{/if}}
+{{/each}}
+
+{{outlet}}
